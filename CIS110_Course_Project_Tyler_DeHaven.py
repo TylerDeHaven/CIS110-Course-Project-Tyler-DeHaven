@@ -1,1 +1,12 @@
-
+#Greet the user and provide instructions. 
+print(f"Your head aches as you slowly regain consciouness.") 
+print(f"You smell industrial grease and melted cheese. Around you, the clang of machinery hums in a unsettling rhythm.") 
+print(f"You cant remember where you are, your thoughts are muddled, fragmented memories surface.")
+print(f"But they slip through your fingers like pizza sauce. ")
+print(f"Was it...laughter? Waking up to the warm sun on your face? A world with out the tyrant Pizza Bot 9000?")
+print(f"Your memory begins to fade...you are jarred and startled as a screen is shoved in your face!") 
+print(f"It's forcing you to snap back to the present.") 
+print(f"Words begin to scroll across its pixelated surface.....")
+print(f"Welcome, new recruit. Pizza Bot 9000 demands to know more about you before you are assigned your directive.")
+print(f"Answer the following questions truthfully...or face the wath of the Etarnal Oven! All hail Pizza Bot 9000!") 
+print(f"You hear a beep and deep robotic voice in your mind cuts through the hum and clangs of the pizza factory.")

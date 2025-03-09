@@ -129,10 +129,8 @@ def start_game():
     print(f"\nThe End")
     
 
-    keepPlaying = "yes"
-    while keepPlaying.lower() == "yes":
-        start_game()
-        keepPlaying = input(f"\nDo you want to play again? Enter yes or no:   ")
-        keepPlaying = input("Please type yes or no:   ")
-
+keepPlaying = "yes"
+while keepPlaying.lower() == "yes":
+    start_game()
+    keepPlaying = input(f"\nDo you want to play again? Enter yes or no:   ")
     

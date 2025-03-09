@@ -1,10 +1,6 @@
 #Greet the user and provide instructions. 
 
-
-
-start_game()
-keepPlaying = "yes"
-while keepPlaying.lower() == "yes":
+def start_game():
     print(f"Your head aches as you slowly regain consciouness.") 
     print(f"You smell industrial grease and melted cheese. Around you, the clang of machinery hums in a unsettling rhythm.") 
     print(f"You cant remember where you are, your thoughts are muddled, fragmented memories surface.")
@@ -133,13 +129,10 @@ while keepPlaying.lower() == "yes":
     print(f"\nThe End")
     
 
-    def start_game():
-        pass
     keepPlaying = "yes"
     while keepPlaying.lower() == "yes":
         start_game()
         keepPlaying = input(f"\nDo you want to play again? Enter yes or no:   ")
-        while keepPlaying.lower() not in ["yes", "no"]:
-            keepPlaying = input("Please type yes or no:   ")
+        keepPlaying = input("Please type yes or no:   ")
 
     

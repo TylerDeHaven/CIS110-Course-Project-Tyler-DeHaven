@@ -1,5 +1,8 @@
 #Greet the user and provide instructions. 
 
+
+
+start_game()
 keepPlaying = "yes"
 while keepPlaying.lower() == "yes":
     print(f"Your head aches as you slowly regain consciouness.") 
@@ -39,7 +42,7 @@ while keepPlaying.lower() == "yes":
     while len(colorBanner) == 0:
         colorBanner =input(f"\nJust pick a color already...  ")
 
-    import time
+    
     time.sleep(2)
     print('-' * 495)
 
@@ -51,15 +54,15 @@ while keepPlaying.lower() == "yes":
     print(f"As you peer out the grimy broken windows at the ruins of {location}, You can't help but wonder if there's more to life than this....")
     print(f"You look around terrified... if the {fearEnforcer} catch you slacking off and read your thoughts you would be excuted for heresy..")
 
-    import time
+    
     time.sleep(3)
     print('-' * 495)
 
     # Decision 1
-    getBackToWork =input(f"\nShould {characterName} get back to work?   Type Yes or No:    ")
+    getBackToWork =input(f"\nShould {characterName} get back to work?   Type yes or no:    ")
     while getBackToWork.lower() != "yes" and getBackToWork.lower() != "no": 
         getBackToWork = input("Please type yes or no:   ")
-    if getBackToWork == "Yes" :
+    if getBackToWork == "yes" :
         print(f"\n{characterName} snaps out of his daydream and continues working diligently in fear.")
         print(f"\nYou hope for a better future, but you are too afraid of the {fearEnforcer}")
         print(f"\nIf the{fearEnforcer} catch you slacking off they might punish you for your insolence..")
@@ -69,7 +72,7 @@ while keepPlaying.lower() == "yes":
         print(f"\n You start to gain courage for yourself and think of a better future.")
         print(f"\n {characterName} starts dreaming of escape and overthrowing the {fearEnforcer} or a way to escape from Pizza Bot 9000 grasp.")
  
-    import time
+    
 
     # Decision 2
     time.sleep(3)
@@ -82,15 +85,15 @@ while keepPlaying.lower() == "yes":
     print(f"\nWhile walking near the the growing crowd you hear some wispers and rumors that there might be a safe zone out side of the factory" )
     print(f"\nYou hear some people murmer about a safe zone in the ruins of {location} outside of the factory... Where there is no pizza.... ")
 
-    import time
+    
     time.sleep(3)
     print('-' * 495)
 
 
-    theOpportunity =input(f"\nDo you continue to deliver the pizza without delay?  Type Yes or No:   ")
+    theOpportunity =input(f"\nDo you continue to deliver the pizza without delay?  Type yes or no:   ")
     while theOpportunity.lower() != "yes" and theOpportunity.lower() != "no":
         theOpportunity = input("Please type yes or no:    ")
-    if theOpportunity == "Yes" :
+    if theOpportunity == "yes" :
         print(f"\nYou don't hesitate with your duties regardless of the commontion at the factory gates." )
         print(f"\nFrightned by the {fearEnforcer} Enforcers you try to hurry past as {favoriteNumber} factory workers gather" )
         print(f"\nThe workers gather and rip down the {colorBanner} banners and face off with the {fearEnforcer} Enforcers." )
@@ -103,7 +106,7 @@ while keepPlaying.lower() == "yes":
         print(f"\nAll this commotion and you notice the front gate was left open by the {fearEnforcer} Enforcers when they left the gate to deal with the riot..." )
         print(f"\nThen you see the riot of factory workers rush the {fearEnforcer} Enforcers and start to fight!")
  
-    import time
+    
     time.sleep(3)
     print('-' * 495)
 
@@ -124,13 +127,19 @@ while keepPlaying.lower() == "yes":
         print(f"Though the journey is perilous, you find freedom in the safe zone in {location} the rumors were true!")
         print(f"You join the other resistance warriors away from the horrors of the factory and start a new life away from the overlord's control")
 
-    import time
+    
     time.sleep(3)
     print('-' * 495)
     print(f"\nThe End")
     
-    KeepPlaying = input(f"\nDo you want to play again? Enter Yes or No:   ")
-    while keepPlaying.lower() not in ["yes", "no"]:
-        KeepPlaying = input("Please type yes or no:   ")
+
+    def start_game():
+        pass
+    keepPlaying = "yes"
+    while keepPlaying.lower() == "yes":
+        start_game()
+        keepPlaying = input(f"\nDo you want to play again? Enter yes or no:   ")
+        while keepPlaying.lower() not in ["yes", "no"]:
+            keepPlaying = input("Please type yes or no:   ")
 
     

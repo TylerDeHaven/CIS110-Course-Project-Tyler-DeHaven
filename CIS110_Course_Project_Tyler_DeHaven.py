@@ -98,7 +98,7 @@ def start_game():
         print(f"\nTerrified that you will get cought up in the mixup you keep your head down and deliver the pizza like you are told" )
         print(f"\nThe Pizza Bot 9000 is pleased with your dedication and for not faltering when faced with temptation"  )
     else:
-        print(f"\nYou see {favoriteNumber} factory workers gather and rip down the {colorBanner} and face off with the {fearEnforcer} Enforcers.")
+        print(f"\nYou see {favoriteNumber} factory workers gather and rip down the {colorBanner} banners and face off with the {fearEnforcer} Enforcers.")
         print(f"\n{characterName} notices the {fearEnforcer} Enforcers get ready to punish the factory workers. The mob starts to chant.." )
         print(f"\nDown with the pizza bot! Down with the pizza bot! in a rhythmic chant." )
         print(f"\nAll this commotion and you notice the front gate was left open by the {fearEnforcer} Enforcers when they left the gate to deal with the riot..." )
@@ -116,7 +116,7 @@ def start_game():
         print(f"{characterName} dreams about what could have been if you had enough courage that day... but gets back to work before something bad happens.")
     elif getBackToWork.lower() == "no" and theOpportunity.lower() == "no":
         print(f"\nWith the factory in chaos and Pizza Bot 9000's systems compromised you join your fellow workers in the riot")
-        print(f"you and the {favoriteNumber} other factory workers rip down all the banners and take down the {fearEnforcer} Enforcers.")
+        print(f"you and the {favoriteNumber} other factory workers rip down all the {colorBanner} banners and take down the {fearEnforcer} Enforcers.")
         print(f"{characterName} and the other factory workers cheer with victory over the tyrannical robot overloard.")
         print(f"The world begins to rebuild starting with the ruins of {location}.. Free from the Pizza Bot 9000 tyranny and from pizza!")
     else: 

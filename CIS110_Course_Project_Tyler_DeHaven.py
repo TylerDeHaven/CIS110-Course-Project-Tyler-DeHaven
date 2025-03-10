@@ -18,7 +18,7 @@ def start_game():
     import time
     time.sleep(2)
     
-    printSeparator
+    printSeparator()
 
     characterName = input(f"\nWhat is your name?")
     while len(characterName) == 0:
@@ -42,7 +42,7 @@ def start_game():
 
     
     time.sleep(2)
-    printSeparator
+    printSeparator()
 
     #The Story Starts
     print(f"{characterName} wakes up to the sound of the factory alarm, signaling the start of another grueling day") 
@@ -54,7 +54,7 @@ def start_game():
 
     
     time.sleep(3)
-    printSeparator
+    printSeparator()
 
     # Decision 1
     getBackToWork =input(f"\nShould {characterName} get back to work?   Type yes or no:    ")
@@ -74,7 +74,7 @@ def start_game():
 
     # Decision 2
     time.sleep(3)
-    printSeparator
+    printSeparator()
     time.sleep(3)
 
     print(f"\nAfter several days while working you are provided with a rare opportunity to deliver a pizza outside of the factory." ) 
@@ -85,7 +85,7 @@ def start_game():
 
     
     time.sleep(3)
-    printSeparator
+    printSeparator()
 
 
     theOpportunity =input(f"\nDo you continue to deliver the pizza without delay?  Type yes or no:   ")
@@ -106,7 +106,7 @@ def start_game():
  
     
     time.sleep(3)
-    printSeparator
+    printSeparator()
 
     #Alternate Endings
     if getBackToWork.lower() == "yes" and theOpportunity.lower() == "yes":
@@ -127,7 +127,7 @@ def start_game():
 
     
     time.sleep(3)
-    printSeparator
+    printSeparator()
     print(f"\nThe End")
     
 

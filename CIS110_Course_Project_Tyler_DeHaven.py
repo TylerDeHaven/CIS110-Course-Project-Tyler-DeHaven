@@ -1,5 +1,7 @@
 #Greet the user and provide instructions. 
-
+def printSeparator():
+        print('-' * 495)
+        
 def start_game():
     print(f"Your head aches as you slowly regain consciouness.") 
     print(f"You smell industrial grease and melted cheese. Around you, the clang of machinery hums in a unsettling rhythm.") 
@@ -15,8 +17,8 @@ def start_game():
 
     import time
     time.sleep(2)
-    print('-' * 495)
-
+    
+    printSeparator
 
     characterName = input(f"\nWhat is your name?")
     while len(characterName) == 0:
@@ -26,9 +28,9 @@ def start_game():
     while len(location) == 0:
         location = input(f"I asked you Where are you from?   ")
     
-    favoriteNumber =input(f"\nWhat is your favorite number?    ")
+    favoriteNumber = input(f"\nWhat is your favorite number?    ")
     while len(favoriteNumber) == 0:
-        favoriteNumber =input(f"\nI told you to tell me a number..   ")    
+        favoriteNumber = input(f"\nI told you to tell me a number..   ")
 
     fearEnforcer =input(f"\nWhat are you afraid of?   ")
     while len(fearEnforcer) == 0:
@@ -40,7 +42,7 @@ def start_game():
 
     
     time.sleep(2)
-    print('-' * 495)
+    printSeparator
 
     #The Story Starts
     print(f"{characterName} wakes up to the sound of the factory alarm, signaling the start of another grueling day") 
@@ -52,7 +54,7 @@ def start_game():
 
     
     time.sleep(3)
-    print('-' * 495)
+    printSeparator
 
     # Decision 1
     getBackToWork =input(f"\nShould {characterName} get back to work?   Type yes or no:    ")
@@ -72,7 +74,7 @@ def start_game():
 
     # Decision 2
     time.sleep(3)
-    print('-' * 495)
+    printSeparator
     time.sleep(3)
 
     print(f"\nAfter several days while working you are provided with a rare opportunity to deliver a pizza outside of the factory." ) 
@@ -83,7 +85,7 @@ def start_game():
 
     
     time.sleep(3)
-    print('-' * 495)
+    printSeparator
 
 
     theOpportunity =input(f"\nDo you continue to deliver the pizza without delay?  Type yes or no:   ")
@@ -104,15 +106,15 @@ def start_game():
  
     
     time.sleep(3)
-    print('-' * 495)
+    printSeparator
 
     #Alternate Endings
-    if getBackToWork == "yes" and theOpportunity == "yes":
+    if getBackToWork.lower() == "yes" and theOpportunity.lower() == "yes":
         print(f"\nYou chose to accept your fate and continue working for Pizza Bot 9000.")
         print(f"Despite your hopes for a better life you don your {colorBanner} uniform and get back to work")
         print(f"After the recent riot the {fearEnforcer} Enforcers grip tightens, and you find yourself making pizzas for the rest of your life.")
         print(f"{characterName} dreams about what could have been if you had enough courage that day... but gets back to work before something bad happens.")
-    elif getBackToWork == "no" and theOpportunity == "no":
+    elif getBackToWork.lower() == "no" and theOpportunity.lower() == "no":
         print(f"\nWith the factory in chaos and Pizza Bot 9000's systems compromised you join your fellow workers in the riot")
         print(f"you and the {favoriteNumber} other factory workers rip down all the banners and take down the {fearEnforcer} Enforcers.")
         print(f"{characterName} and the other factory workers cheer with victory over the tyrannical robot overloard.")
@@ -125,7 +127,7 @@ def start_game():
 
     
     time.sleep(3)
-    print('-' * 495)
+    printSeparator
     print(f"\nThe End")
     
 
@@ -133,4 +135,6 @@ keepPlaying = "yes"
 while keepPlaying.lower() == "yes":
     start_game()
     keepPlaying = input(f"\nDo you want to play again? Enter yes or no:   ")
+if keepPlaying.lower() == "no":
+    print("\nThanks for playing! All hail Pizza Bot 9000!")
     

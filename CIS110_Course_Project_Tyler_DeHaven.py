@@ -1,7 +1,22 @@
 #Greet the user and provide instructions. 
 def printSeparator():
         print('-' * 495)
-        
+import time
+
+print(f"The world as we know it has fallen under the iron crust of the merciless Pizza Bot 9000")
+print(f"A once peaceful world has been turned into a land of endless toppings, cheesey tyranny of the Pizza Bot 9000")
+print(f"But with every tryanical rule there will always be people to chalange the rulers...")
+print(f"Before you embark on your journey, you'll need to prepare.")
+print(f"Tell us a little bit about yourself by answering the upcoming questions.")
+print(f"The questions will shape your decisions in the story to come.")
+print(f"Will you rise above the tryanical rule of the Pizza Bot? Or will you sucumb to the Enforcers rule.. The choice is yours")
+print(f"After you answer the questions about yourself you will be face a series of yes-or-no choices that will determine your path.")
+print(f"Every decision you make will have an impact on your story.")
+print(f"Good luck and choose wisely... The fate of the crust is in your hands..")
+
+printSeparator()
+time.sleep(4)
+       
 def start_game():
     print(f"Your head aches as you slowly regain consciouness.") 
     print(f"You smell industrial grease and melted cheese. Around you, the clang of machinery hums in a unsettling rhythm.") 
@@ -15,7 +30,8 @@ def start_game():
     print(f"Answer the following questions truthfully...or face the wath of the Etarnal Oven! All hail Pizza Bot 9000!") 
     print(f"You hear a beep and deep robotic voice in your mind cuts through the hum and clangs of the pizza factory.")
 
-    import time
+#Quesitons for the player
+    
     time.sleep(2)
     
     printSeparator()
